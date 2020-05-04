@@ -11,7 +11,7 @@
 import KvFlexItem from '../flex/KvFlexItem'
 
 export default {
-  name: 'KvToolbar',
+  name: 'KvToolbarItem',
   components: {
     KvFlexItem
   }
