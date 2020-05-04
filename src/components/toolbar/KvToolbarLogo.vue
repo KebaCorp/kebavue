@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import KvToolbarItem from '@/components/proxy/toolbar/KvToolbarItem'
+import KvToolbarItem from '../toolbar/KvToolbarItem'
 import KvFlex from '../flex/KvFlex'
 import KvFlexItem from '../flex/KvFlexItem'
 
