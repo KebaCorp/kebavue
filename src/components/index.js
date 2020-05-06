@@ -1,5 +1,6 @@
 import KvApp from './app/KvApp'
 import KvButton from './button/KvButton'
+import KvContainer from './container/KvContainer'
 import KvFlex from './flex/KvFlex'
 import KvFlexItem from './flex/KvFlexItem'
 import KvInput from './input/KvInput'
@@ -10,6 +11,7 @@ import KvToolbarLogo from './toolbar/KvToolbarLogo'
 export default {
   KvApp,
   KvButton,
+  KvContainer,
   KvFlex,
   KvFlexItem,
   KvInput,
