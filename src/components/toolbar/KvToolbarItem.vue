@@ -1,7 +1,8 @@
 <template>
   <kv-flex-item
     class="kv-toolbar-item"
-    align-self="stretch"
+    align-self="center"
+    width="auto"
   >
     <slot></slot>
   </kv-flex-item>
@@ -21,5 +22,6 @@ export default {
 <style lang="scss" scoped>
   .kv-toolbar-item {
     align-items: center;
+    padding: 0 5px;
   }
 </style>

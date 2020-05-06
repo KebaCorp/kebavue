@@ -1,10 +1,12 @@
 <template>
-  <kv-flex
-    class="kv-toolbar"
-    :style="{ height }"
-  >
-    <slot></slot>
-  </kv-flex>
+  <div :style="{ height }">
+    <kv-flex
+      class="kv-toolbar"
+      :style="{ height, position: fixed ? 'fixed' : 'static', background: $kebavue.primary }"
+    >
+      <slot></slot>
+    </kv-flex>
+  </div>
 </template>
 
 <script>
@@ -16,13 +18,16 @@ export default {
     KvFlex
   },
   props: {
-    height: { default: '50px' }
+    height: { default: '50px' },
+    fixed: { type: Boolean, default: true }
   }
 }
 </script>
 
 <style lang="scss" scoped>
   .kv-toolbar {
-    border: 1px solid red;
+    padding: 0 15px;
+    background: #42A85F;
+    width: 100%;
   }
 </style>

@@ -19,5 +19,6 @@ export default {
 <style scoped>
   .kv-flex {
     display: flex;
+    box-sizing: border-box;
   }
 </style>

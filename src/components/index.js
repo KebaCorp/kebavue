@@ -4,6 +4,7 @@ import KvButton from './button/KvButton'
 import KvContainer from './container/KvContainer'
 import KvFlex from './flex/KvFlex'
 import KvFlexItem from './flex/KvFlexItem'
+import KvFlexSpacer from './flex/KvFlexSpacer'
 import KvInput from './input/KvInput'
 import KvPagination from './pagination/KvPagination'
 import KvTable from './table/KvTable'
@@ -23,6 +24,7 @@ export default {
   KvContainer,
   KvFlex,
   KvFlexItem,
+  KvFlexSpacer,
   KvInput,
   KvPagination,
   KvTable,

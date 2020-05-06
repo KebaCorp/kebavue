@@ -1,0 +1,66 @@
+@import 'components/components'
+
+
+/* Cursors */
+.cursor-pointer
+  cursor: pointer
+
+.cursor-help
+  cursor: help
+
+.cursor-handle
+  cursor: move
+
+
+/* Padding and margin */
+@for $i from 0 through 10
+  .pg-#{$i}
+    padding: (10 * $i) + 0px
+
+  .pgt-#{$i}
+    padding-top: (10 * $i) + 0px
+
+  .pgl-#{$i}
+    padding-left: (10 * $i) + 0px
+
+  .pgr-#{$i}
+    padding-right: (10 * $i) + 0px
+
+  .pgb-#{$i}
+    padding-bottom: (10 * $i) + 0px
+
+  .mg-#{$i}
+    margin: (10 * $i) + 0px
+
+  .mgt-#{$i}
+    margin-top: (10 * $i) + 0px
+
+  .mgl-#{$i}
+    margin-left: (10 * $i) + 0px
+
+  .mgr-#{$i}
+    margin-right: (10 * $i) + 0px
+
+  .mgb-#{$i}
+    margin-bottom: (10 * $i) + 0px
+
+
+/* Dotted */
+.dotted-container
+  overflow: hidden
+  white-space: nowrap
+
+.dotted-container::after
+  padding-left: 5px
+  color: #cccccc
+  content: '........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................'
+
+
+/* Line clamp */
+@for $line-clamp from 1 through 5
+  .qmt-clipped-text-#{$line-clamp}
+    -webkit-line-clamp: #{$line-clamp}
+    overflow: hidden
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+    display: -webkit-box

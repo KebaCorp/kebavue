@@ -1,17 +1,18 @@
 <template>
   <kv-toolbar-item class="kv-toolbar-logo">
-    <kv-flex>
+    <kv-flex class="kv-toolbar-logo-flex">
 
       <!--Text-->
       <kv-flex-item
         v-if="text"
-        align-self="stretch"
+        align-self="center"
         class="kv-toolbar-logo-text"
       >
         <router-link :to="to">
           <span
             v-on="$listeners"
             v-bind="$attrs"
+            :style="{ color: $kebavue.primaryText }"
           >
             {{ text }}
           </span>
@@ -68,28 +69,33 @@ export default {
 <style lang="scss" scoped>
   .kv-toolbar-logo {
     height: inherit;
+  }
 
-    div {
-      height: inherit;
+  .kv-toolbar-logo-flex {
+    height: inherit;
+  }
+
+  .kv-toolbar-logo-text {
+    padding: 0 5px;
+
+    a {
+      text-decoration: none;
     }
+  }
+
+  .kv-toolbar-logo-image {
+    padding: 0 5px;
+    height: inherit;
 
     a {
       height: inherit;
-      display: block;
       text-decoration: none;
     }
 
     img {
       box-sizing: border-box;
-      padding: 10px;
+      padding: 5px;
       height: inherit;
     }
-  }
-
-  .kv-toolbar-logo-text {
-  }
-
-  .kv-toolbar-logo-image {
-    height: inherit;
   }
 </style>
