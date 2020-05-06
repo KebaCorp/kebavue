@@ -1,10 +1,11 @@
 <template>
-  <kv-flex>
+  <kv-flex class="kv-table-pagination">
     <kv-flex-item
       v-for="page in pages"
       :key="page"
       v-on="$listeners"
       @click="onChange"
+      class="kv-table-pagination-item"
     >
       <span :style="{ fontWeight: page === currentPage ? 'bold' : '' }">
         {{ page + 1 }}

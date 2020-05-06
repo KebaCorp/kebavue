@@ -1,5 +1,5 @@
 <template>
-  <tbody>
+  <tbody class="kv-table-body">
   <slot></slot>
   </tbody>
 </template>

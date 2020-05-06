@@ -1,12 +1,23 @@
 <template>
-  <table>
-    <slot></slot>
-  </table>
+  <div :style="{ overflowY, overflowX }">
+    <table
+      v-on="$listeners"
+      v-bind="$attrs"
+      class="kv-table"
+    >
+      <slot></slot>
+    </table>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'KvTable'
+  name: 'KvTable',
+  inheritAttrs: false,
+  props: {
+    overflowY: { type: String, default: 'auto' },
+    overflowX: { type: String, default: 'hidden' }
+  }
 }
 </script>
 

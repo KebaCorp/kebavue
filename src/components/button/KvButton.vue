@@ -1,11 +1,12 @@
 <template>
-  <label>
-    <input
-      type="submit"
-      v-on="$listeners"
-      v-bind="$attrs"
-    >
-  </label>
+  <button
+    type="button"
+    v-on="$listeners"
+    v-bind="$attrs"
+    class="kv-button"
+  >
+    <slot></slot>
+  </button>
 </template>
 
 <script>

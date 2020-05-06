@@ -1,5 +1,5 @@
 <template>
-  <kv-flex>
+  <kv-flex class="kv-breadcrumbs">
     <template
       v-for="(item, index) in items"
     >

@@ -1,5 +1,5 @@
 <template>
-  <tfoot>
+  <tfoot class="kv-table-foot">
   <slot></slot>
   </tfoot>
 </template>

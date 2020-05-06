@@ -5,6 +5,7 @@
       @input="onInput"
       v-on="$listeners"
       v-bind="$attrs"
+      class="kv-input"
     >
   </label>
 </template>
