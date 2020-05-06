@@ -6,15 +6,22 @@
 
       <!--Link-->
       <router-link
+        v-if="item.to"
         :key="`link-${index}`"
-        :to="item.href"
+        :to="item.to"
       >
         {{ item.text }}
       </router-link>
+      <span
+        v-else
+        :key="`text-${index}`"
+      >
+        {{ item.text }}
+      </span>
 
       <!--Divider-->
       <span
-        v-if="index < items.length"
+        v-if="index < (items.length - 1)"
         :key="`divider-${index}`"
       >
         {{ divider }}
