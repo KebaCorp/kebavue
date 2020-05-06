@@ -1,7 +1,7 @@
 <template>
   <div
     class="kv-flex-item"
-    :style="{ alignSelf }"
+    :style="{ alignSelf, width: fullWidth ? '100%' : '' }"
   >
     <slot></slot>
   </div>
@@ -11,7 +11,8 @@
 export default {
   name: 'KvFlexItem',
   props: {
-    alignSelf: { type: String, default: 'flex-start' }
+    alignSelf: { type: String, default: 'flex-start' },
+    fullWidth: { type: Boolean, default: false }
   }
 }
 </script>
