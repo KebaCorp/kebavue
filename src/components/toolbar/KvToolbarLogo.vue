@@ -13,6 +13,7 @@
             v-on="$listeners"
             v-bind="$attrs"
             :style="{ color: $kebavue.primaryText }"
+            class="header-3"
           >
             {{ text }}
           </span>
@@ -79,6 +80,7 @@ export default {
     padding: 0 5px;
 
     a {
+      display: block;
       text-decoration: none;
     }
   }
@@ -88,6 +90,7 @@ export default {
     height: inherit;
 
     a {
+      display: block;
       height: inherit;
       text-decoration: none;
     }

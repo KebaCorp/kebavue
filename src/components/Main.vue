@@ -90,12 +90,21 @@ export default {
         to: { name: 'main' }
       },
       {
-        text: 'Parent Page',
+        text: 'Parent Page 1',
         to: { name: 'main' }
       },
       {
+        text: 'Parent Page 2'
+      },
+      {
+        text: 'Parent Page 3',
+        to: { name: 'main' },
+        disabled: true
+      },
+      {
         text: 'Active Page',
-        to: { name: 'main' }
+        to: { name: 'main' },
+        isActivePage: true
       }
     ],
     tableTitles: [

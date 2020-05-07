@@ -7,7 +7,8 @@ const prototype = {
   secondary: '#eeeeee',
   secondaryDisabled: '#fafafa',
   secondaryText: '#222222',
-  secondaryTextDisabled: '#aaaaaa'
+  secondaryTextDisabled: '#aaaaaa',
+  link: '#a674fc'
 }
 
 export default {
