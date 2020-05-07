@@ -1,7 +1,7 @@
 <template>
   <div
     class="kv-flex"
-    :style="{ flexDirection: column ? 'column' : 'row' }"
+    :style="{ flexDirection: column ? 'column' : 'row', flexWrap: wrap ? 'wrap' : 'nowrap' }"
   >
     <slot></slot>
   </div>
@@ -11,7 +11,8 @@
 export default {
   name: 'KvFlex',
   props: {
-    column: { type: Boolean, default: false }
+    column: { type: Boolean, default: false },
+    wrap: { type: Boolean, default: false }
   }
 }
 </script>

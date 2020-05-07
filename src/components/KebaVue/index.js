@@ -2,10 +2,12 @@ import components from '../index'
 
 // Options
 const prototype = {
-  primary: '#225465',
+  primary: '#7e57c2',
   primaryText: 'white',
-  secondary: '#cccccc',
-  secondaryText: '#222222'
+  secondary: '#eeeeee',
+  secondaryDisabled: '#fafafa',
+  secondaryText: '#222222',
+  secondaryTextDisabled: '#aaaaaa'
 }
 
 export default {

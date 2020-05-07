@@ -8,7 +8,7 @@
         <!--Logo-->
         <kv-toolbar-logo
           :to="{ name: 'main' }"
-          text="DSFsd"
+          text="KebaVue"
           image="./img/logo.png"
         />
 
@@ -27,6 +27,11 @@
       </kv-toolbar>
     </kv-flex-item>
 
+    <!--Breadcrumbs-->
+    <kv-flex-item class="pg-1">
+      <kv-breadcrumbs :items="breadcrumbs"/>
+    </kv-flex-item>
+
     <!--Button-->
     <kv-flex-item class="pg-1">
       <kv-button>
@@ -35,7 +40,7 @@
     </kv-flex-item>
 
     <!--Table-->
-    <kv-flex-item full-width class="pg-1">
+    <kv-flex-item class="pg-1">
       <kv-table>
         <kv-table-head>
           <kv-table-tr>
@@ -64,11 +69,11 @@
     </kv-flex-item>
 
     <!--Pagination-->
-    <kv-flex-item>
+    <kv-flex-item class="pg-1">
       <kv-pagination
-        :count="20"
+        :count="200"
         :limit="10"
-        :offset="10"
+        :offset="11"
       />
     </kv-flex-item>
 
@@ -79,6 +84,20 @@
 export default {
   name: 'Main',
   data: () => ({
+    breadcrumbs: [
+      {
+        text: 'Main',
+        to: { name: 'main' }
+      },
+      {
+        text: 'Parent Page',
+        to: { name: 'main' }
+      },
+      {
+        text: 'Active Page',
+        to: { name: 'main' }
+      }
+    ],
     tableTitles: [
       {
         value: 'ID'

@@ -45,6 +45,14 @@
     margin-bottom: (10 * $i) + 0px
 
 
+/* Box shadow */
+@for $i from 0 through 20
+  .box-shadow-#{$i}
+    -webkit-box-shadow: 0 1px ($i) + 0px 0 rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 1px ($i) + 0px 0 rgba(0, 0, 0, 0.3)
+    box-shadow: 0 1px ($i) + 0px 0 rgba(0, 0, 0, 0.3)
+
+
 /* Dotted */
 .dotted-container
   overflow: hidden
