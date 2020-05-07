@@ -39,6 +39,17 @@
       </kv-button>
     </kv-flex-item>
 
+    <!--Tab-->
+    <kv-flex-item class="pg-2">
+      <kv-tab :items="breadcrumbs">
+        <kv-flex class="pg-3">
+          <kv-flex-item>
+            Content
+          </kv-flex-item>
+        </kv-flex>
+      </kv-tab>
+    </kv-flex-item>
+
     <!--Table-->
     <kv-flex-item class="pg-1">
       <kv-table>

@@ -1,6 +1,7 @@
 <template>
   <div
     class="kv-flex-item"
+    :class="{ [`box-shadow-${shadow}`]: !!shadow }"
     :style="{ alignSelf, width, flexGrow: grow }"
   >
     <slot></slot>
@@ -13,7 +14,8 @@ export default {
   props: {
     alignSelf: { type: String, default: 'flex-start' },
     width: { type: String, default: '100%' },
-    grow: { type: Number, default: 0 }
+    grow: { type: Number, default: 0 },
+    shadow: { type: Number, default: 0 }
   }
 }
 </script>

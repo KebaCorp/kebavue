@@ -7,6 +7,8 @@ import KvFlexItem from './flex/KvFlexItem'
 import KvFlexSpacer from './flex/KvFlexSpacer'
 import KvInput from './input/KvInput'
 import KvPagination from './pagination/KvPagination'
+import KvTab from './tab/KvTab'
+import KvTabVertical from './tab/KvTabVertical'
 import KvTable from './table/KvTable'
 import KvTableBody from './table/KvTableBody'
 import KvTableFoot from './table/KvTableFoot'
@@ -27,6 +29,8 @@ export default {
   KvFlexSpacer,
   KvInput,
   KvPagination,
+  KvTab,
+  KvTabVertical,
   KvTable,
   KvTableBody,
   KvTableFoot,
