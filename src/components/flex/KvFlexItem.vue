@@ -2,7 +2,7 @@
   <div
     class="kv-flex-item"
     :class="{ [`box-shadow-${shadow}`]: !!shadow }"
-    :style="{ alignSelf, width, flexGrow: grow }"
+    :style="{ alignSelf, width, flexGrow: grow, textAlign }"
   >
     <slot></slot>
   </div>
@@ -13,6 +13,7 @@ export default {
   name: 'KvFlexItem',
   props: {
     alignSelf: { type: String, default: 'flex-start' },
+    textAlign: { type: String, default: 'left' },
     width: { type: String, default: '100%' },
     grow: { type: Number, default: 0 },
     shadow: { type: Number, default: 0 }
