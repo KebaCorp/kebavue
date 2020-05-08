@@ -37,7 +37,8 @@ export default {
   computed: {
     itemStyle () {
       return {
-        color: this.$kebavue.secondaryText
+        color: this.$kebavue.secondaryText,
+        background: this.$kebavue.secondary
       }
     }
   }
@@ -45,20 +46,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .kv-tab-vertical-item {
+  .kv-tab-vertical-item-link, .kv-tab-vertical-item-text {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-    &:hover {
-      opacity: 70%;
-    }
+    display: block;
+    padding: 15px 10px;
   }
 
   .kv-tab-vertical-item-link {
     text-decoration: none;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 
-  .kv-tab-vertical-item-link, .kv-tab-vertical-item-text {
-    display: block;
-    padding: 15px 10px;
+  .kv-tab-vertical-item-link-active {
+    z-index: 2;
+    border-right: none;
+    background: white !important;
+
+    &:hover {
+      filter: none;
+    }
   }
 </style>

@@ -32,11 +32,36 @@
       <kv-breadcrumbs :items="breadcrumbs"/>
     </kv-flex-item>
 
-    <!--Button-->
+    <!--Buttons-->
     <kv-flex-item class="pg-1">
-      <kv-button>
-        Button
-      </kv-button>
+
+      <!--Buttons-->
+      <kv-button-group separated>
+        <kv-button>
+          Button 1
+        </kv-button>
+        <kv-button>
+          Button 2
+        </kv-button>
+        <kv-button>
+          Button 3
+        </kv-button>
+      </kv-button-group>
+    </kv-flex-item>
+
+    <!--Buttons group-->
+    <kv-flex-item class="pg-1">
+      <kv-button-group>
+        <kv-button>
+          Button 1
+        </kv-button>
+        <kv-button>
+          Button 2
+        </kv-button>
+        <kv-button>
+          Button 3
+        </kv-button>
+      </kv-button-group>
     </kv-flex-item>
 
     <!--Tab-->

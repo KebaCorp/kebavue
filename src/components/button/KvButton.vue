@@ -7,7 +7,7 @@
     :class="{ [`box-shadow-${shadow}`]: !disabled }"
     :style="{
       cursor: disabled ? 'auto' : 'pointer',
-      background: background,
+      background,
       color: disabled ? $kebavue.secondaryTextDisabled : ''
     }"
   >
@@ -26,9 +26,11 @@ export default {
   },
   computed: {
     background () {
-      return this.disabled
-        ? this.$kebavue.secondaryDisabled
-        : (this.$kebavue[this.color] || this.color || this.$kebavue.secondary)
+      if (this.disabled) {
+        return this.$kebavue.secondaryDisabled
+      }
+
+      return this.$kebavue[this.color] || this.color || this.$kebavue.secondary
     }
   }
 }
@@ -40,11 +42,15 @@ export default {
     padding: 7px 15px;
     border-radius: 4px;
     outline: none;
-    transition-duration: .25s;
+    transition-duration: 0.2s;
     border: 3px solid rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background: rgba(0, 0, 0, 0.1);
+      filter: brightness(0.9);
+    }
+
+    &:active {
+      filter: brightness(0.7);
     }
   }
 </style>

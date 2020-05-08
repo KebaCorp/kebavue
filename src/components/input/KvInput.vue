@@ -25,6 +25,12 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .kv-input {
+    padding: 10px 5px;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    transition-duration: .25s;
+  }
 </style>

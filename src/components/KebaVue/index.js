@@ -8,7 +8,8 @@ const prototype = {
   secondaryDisabled: '#fafafa',
   secondaryText: '#222222',
   secondaryTextDisabled: '#aaaaaa',
-  link: '#a674fc'
+  link: '#a674fc',
+  contentBg: 'white'
 }
 
 export default {

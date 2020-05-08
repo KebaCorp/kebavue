@@ -2,7 +2,12 @@
   <div :style="{ height }">
     <kv-flex
       class="kv-toolbar"
-      :style="{ height, position: fixed ? 'fixed' : 'static', background: $kebavue.primary }"
+      :style="{
+        height,
+        position: fixed ? 'fixed' : 'static',
+        zIndex: fixed ? '1' : 'auto',
+        background: $kebavue.primary
+      }"
     >
       <slot></slot>
     </kv-flex>

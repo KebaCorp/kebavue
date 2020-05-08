@@ -56,14 +56,6 @@ export default {
     max-width: 300px;
   }
 
-  .kv-tab-left-container {
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-  }
-
-  .kv-tab-right-container {
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-  }
-
   .kv-tab-content {
     height: 600px;
   }

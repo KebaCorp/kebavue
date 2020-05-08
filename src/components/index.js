@@ -1,6 +1,7 @@
 import KvApp from './app/KvApp'
 import KvBreadcrumbs from './breadcrumbs/KvBreadcrumbs'
 import KvButton from './button/KvButton'
+import KvButtonGroup from './button/KvButtonGroup'
 import KvContainer from './container/KvContainer'
 import KvFlex from './flex/KvFlex'
 import KvFlexItem from './flex/KvFlexItem'
@@ -23,6 +24,7 @@ export default {
   KvApp,
   KvBreadcrumbs,
   KvButton,
+  KvButtonGroup,
   KvContainer,
   KvFlex,
   KvFlexItem,
