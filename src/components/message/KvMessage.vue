@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { getColor } from '@/mixins/colorMixin'
+import { getColor } from '../../mixins/colorMixin'
 
 export default {
   name: 'KvMessage',
