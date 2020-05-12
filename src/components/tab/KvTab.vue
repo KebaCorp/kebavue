@@ -55,8 +55,4 @@ export default {
   .kv-tab-left-container, .kv-tab-right-container {
     max-width: 300px;
   }
-
-  .kv-tab-content {
-    height: 600px;
-  }
 </style>

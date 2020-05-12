@@ -3,14 +3,14 @@
     <kv-flex class="list-dotted-item-flex">
 
       <!--Left-->
-      <kv-flex-item class="list-dotted-item-left">
+      <kv-flex-item class="list-dotted-item-left" :shrink="leftShrink">
         <div class="list-dotted-item-left-item">
           <slot name="left"></slot>
         </div>
       </kv-flex-item>
 
       <!--Right-->
-      <kv-flex-item class="list-dotted-item-right">
+      <kv-flex-item class="list-dotted-item-right" :shrink="rightShrink">
         <slot name="right"></slot>
       </kv-flex-item>
 
@@ -20,7 +20,11 @@
 
 <script>
 export default {
-  name: 'KvListDottedItem'
+  name: 'KvListDottedItem',
+  props: {
+    leftShrink: { type: Number, default: 1 },
+    rightShrink: { type: Number, default: 2 }
+  }
 }
 </script>
 
