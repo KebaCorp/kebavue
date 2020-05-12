@@ -1,16 +1,5 @@
 import components from '../index'
-
-// Options
-const prototype = {
-  primary: '#7e57c2',
-  primaryText: 'white',
-  secondary: '#eeeeee',
-  secondaryDisabled: '#fafafa',
-  secondaryText: '#222222',
-  secondaryTextDisabled: '#aaaaaa',
-  link: '#a674fc',
-  contentBg: 'white'
-}
+import prototype from './options'
 
 export default {
   install: (Vue, options) => {

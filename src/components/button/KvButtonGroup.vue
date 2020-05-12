@@ -38,12 +38,13 @@ export default {
     overflow: hidden;
 
     .kv-button {
-      margin: 0;
+      padding: 10px 15px;
       border: none;
       border-radius: 0;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
+      margin: 0;
     }
 
     .kv-button:not(:last-child) {

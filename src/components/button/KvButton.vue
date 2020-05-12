@@ -39,11 +39,12 @@ export default {
 <style lang="scss" scoped>
   .kv-button {
     cursor: pointer;
-    padding: 7px 15px;
+    padding: 10px 15px;
     border-radius: 4px;
     outline: none;
     transition-duration: 0.2s;
-    border: 3px solid rgba(0, 0, 0, 0.1);
+    border: none;
+    white-space: nowrap;
 
     &:hover {
       filter: brightness(0.9);

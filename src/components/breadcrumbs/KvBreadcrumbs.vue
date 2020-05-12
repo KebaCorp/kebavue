@@ -1,19 +1,21 @@
 <template>
-  <kv-flex class="kv-breadcrumbs">
-    <template
+  <kv-flex class="kv-breadcrumbs" :wrap="wrap">
+    <kv-flex-item
       v-for="(item, index) in items"
+      :key="index"
+      :width="width"
+      class="kv-breadcrumbs-item"
     >
 
       <!--Link-->
       <router-link
         v-if="item.to && !item.isActivePage && !item.disabled"
-        :key="`link-${index}`"
         :to="item.to"
         :style="{
           color: $kebavue.link
         }"
       >
-        {{ item.text }}
+        <span>{{ item.text }}</span>
       </router-link>
       <span
         v-else
@@ -22,29 +24,31 @@
         :style="{
           color: $kebavue.secondaryTextDisabled
         }"
-      >
-        {{ item.text }}
-      </span>
+      >{{ item.text }}</span>
 
       <!--Divider-->
       <span
         v-if="index < (items.length - 1)"
-        :key="`divider-${index}`"
         class="kv-breadcrumbs-divider"
         :style="{
           color: $kebavue.secondaryText
         }"
-      >
-        {{ divider }}
-      </span>
+      >{{ divider }}</span>
 
-    </template>
+    </kv-flex-item>
   </kv-flex>
 </template>
 
 <script>
+import KvFlex from '../flex/KvFlex'
+import KvFlexItem from '../flex/KvFlexItem'
+
 export default {
   name: 'KvBreadcrumbs',
+  components: {
+    KvFlex,
+    KvFlexItem
+  },
   props: {
     /**
      * Breadcrumbs items.
@@ -60,13 +64,17 @@ export default {
      * ]
      */
     items: { type: [Array, Object], default: () => ([]) },
-    divider: { type: String, default: '/' }
+    divider: { type: String, default: '/' },
+    width: { type: String, default: 'fit-content' },
+    wrap: { type: Boolean, default: true }
   }
 }
 </script>
 
 <style lang="scss" scoped>
   .kv-breadcrumbs {
+    white-space: nowrap;
+
     a {
       text-decoration: none;
     }

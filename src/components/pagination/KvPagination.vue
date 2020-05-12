@@ -2,6 +2,8 @@
   <kv-flex
     class="kv-table-pagination"
     :wrap="wrap"
+    :width="width"
+    :justify-content="justifyContent"
   >
     <kv-flex-item
       v-for="(page, index) in pages"
@@ -34,6 +36,8 @@ export default {
     limit: { type: Number, default: 15 },
     activeClass: { type: String, default: 'kv-table-pagination-item-active' },
     maxPages: { type: Number, default: 10 },
+    width: { type: String, default: 'auto' },
+    justifyContent: { type: String, default: 'flex-start' },
     wrap: { type: Boolean, default: true }
   },
   data: () => ({

@@ -5,7 +5,9 @@
     :style="{
       flexDirection: column ? 'column' : 'row',
       flexWrap: wrap ? 'wrap' : 'nowrap',
-      overflow
+      overflow,
+      width,
+      justifyContent
     }"
   >
     <slot></slot>
@@ -17,10 +19,12 @@ export default {
   name: 'KvFlex',
   props: {
     column: { type: Boolean, default: false },
+    width: { type: String, default: '100%' },
     wrap: { type: Boolean, default: false },
+    justifyContent: { type: String, default: 'flex-start' },
     shadow: { type: Number, default: 0 },
     borderRadius: { type: Number, default: 0 },
-    overflow: { type: String, default: 'auto' }
+    overflow: { type: String, default: 'visible' }
   }
 }
 </script>

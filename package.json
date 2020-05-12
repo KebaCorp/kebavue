@@ -1,6 +1,6 @@
 {
   "name": "kebavue",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Vue design system from KebaCorp",
   "author": "Abek Narynov <vhkeba@gmail.com>",
   "private": false,
@@ -8,7 +8,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

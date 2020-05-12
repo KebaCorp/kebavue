@@ -1,5 +1,5 @@
 <template>
-  <kv-flex column>
+  <kv-flex column class="pgb-3">
 
     <!--Toolbar-->
     <kv-flex-item>
@@ -9,7 +9,6 @@
         <kv-toolbar-logo
           :to="{ name: 'main' }"
           text="KebaVue"
-          image="./img/logo.png"
         />
 
         <kv-flex-spacer/>
@@ -21,45 +20,39 @@
 
         <!--Button-->
         <kv-toolbar-item>
-          <kv-button>Button</kv-button>
+          <kv-button>Toolbar Button</kv-button>
         </kv-toolbar-item>
 
       </kv-toolbar>
     </kv-flex-item>
 
     <!--Breadcrumbs-->
-    <kv-flex-item class="pg-1">
+    <kv-flex-item class="pg-2">
       <kv-breadcrumbs :items="breadcrumbs"/>
     </kv-flex-item>
 
     <!--Buttons-->
-    <kv-flex-item class="pg-1">
+    <kv-flex-item class="pg-2">
 
       <!--Buttons-->
       <kv-button-group separated>
-        <kv-button>
-          Button 1
-        </kv-button>
-        <kv-button>
-          Button 2
-        </kv-button>
-        <kv-button>
-          Button 3
+        <kv-button
+          v-for="i in 10"
+          :key="i"
+        >
+          Button {{ i }}
         </kv-button>
       </kv-button-group>
     </kv-flex-item>
 
     <!--Buttons group-->
-    <kv-flex-item class="pg-1">
+    <kv-flex-item class="pg-2">
       <kv-button-group>
-        <kv-button>
-          Button 1
-        </kv-button>
-        <kv-button>
-          Button 2
-        </kv-button>
-        <kv-button>
-          Button 3
+        <kv-button
+          v-for="i in 10"
+          :key="i"
+        >
+          Button {{ i }}
         </kv-button>
       </kv-button-group>
     </kv-flex-item>
@@ -76,8 +69,8 @@
     </kv-flex-item>
 
     <!--Table-->
-    <kv-flex-item class="pg-1">
-      <kv-table>
+    <kv-flex-item class="pg-2">
+      <kv-table class="box-shadow-12">
         <kv-table-head>
           <kv-table-tr>
             <kv-table-td
@@ -105,7 +98,7 @@
     </kv-flex-item>
 
     <!--Pagination-->
-    <kv-flex-item class="pg-1">
+    <kv-flex-item class="pg-2">
       <kv-pagination
         :count="200"
         :limit="10"

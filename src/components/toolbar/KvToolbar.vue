@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ height }">
+  <div :style="{ height }" class="kv-toolbar-wrapper">
     <kv-flex
       class="kv-toolbar"
       :style="{
@@ -8,6 +8,7 @@
         zIndex: fixed ? '1' : 'auto',
         background: $kebavue.primary
       }"
+      overflow="auto"
     >
       <slot></slot>
     </kv-flex>
@@ -34,5 +35,7 @@ export default {
     padding: 0 15px;
     background: #42A85F;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 </style>
