@@ -14,7 +14,7 @@ export default {
   props: {
     alignSelf: { type: String, default: 'flex-start' },
     textAlign: { type: String, default: 'left' },
-    width: { type: String, default: '100%' },
+    width: { type: String, default: 'auto' },
     grow: { type: Number, default: 0 },
     shrink: { type: Number, default: 1 },
     shadow: { type: Number, default: 0 }
