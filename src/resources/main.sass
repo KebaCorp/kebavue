@@ -34,6 +34,14 @@ h1, h2, h3, h4, h5, h6
   .pgb-#{$i}
     padding-bottom: (10 * $i) + 0px
 
+  .pgh-#{$i}
+    padding-left: (10 * $i) + 0px
+    padding-right: (10 * $i) + 0px
+
+  .pgv-#{$i}
+    padding-top: (10 * $i) + 0px
+    padding-bottom: (10 * $i) + 0px
+
   .mg-#{$i}
     margin: (10 * $i) + 0px
 
@@ -47,6 +55,14 @@ h1, h2, h3, h4, h5, h6
     margin-right: (10 * $i) + 0px
 
   .mgb-#{$i}
+    margin-bottom: (10 * $i) + 0px
+
+  .mgh-#{$i}
+    margin-left: (10 * $i) + 0px
+    margin-right: (10 * $i) + 0px
+
+  .mgv-#{$i}
+    margin-top: (10 * $i) + 0px
     margin-bottom: (10 * $i) + 0px
 
 
@@ -65,17 +81,6 @@ h1, h2, h3, h4, h5, h6
   /* Border radius */
   .border-radius-#{$i}
     border-radius: $i + 0px
-
-
-/* Dotted */
-.dotted-container
-  overflow: hidden
-  white-space: nowrap
-
-.dotted-container::after
-  padding-left: 5px
-  color: #cccccc
-  content: '........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................'
 
 
 /* Line clamp */

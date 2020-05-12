@@ -5,7 +5,7 @@
       :style="{
         height,
         position: fixed ? 'fixed' : 'static',
-        zIndex: fixed ? '1' : 'auto',
+        zIndex: fixed ? '10' : 'auto',
         background: $kebavue.primary
       }"
       overflow="auto"

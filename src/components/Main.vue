@@ -57,6 +57,38 @@
       </kv-button-group>
     </kv-flex-item>
 
+    <!--List dotted-->
+    <kv-flex-item class="pg-2">
+      <kv-list-dotted
+        v-for="(dottedDatum, index) in dottedData"
+        :key="index"
+      >
+        <template slot="header">
+          <h1>{{ dottedDatum.header }}</h1>
+        </template>
+        <kv-list-dotted-item
+          v-for="i in 15"
+          :key="i"
+        >
+          <template slot="left">
+            Left data {{ i }}
+          </template>
+          <template slot="right">
+            Right data {{ i }}
+          </template>
+        </kv-list-dotted-item>
+      </kv-list-dotted>
+    </kv-flex-item>
+
+    <!--Message-->
+    <kv-flex-item class="pg-2">
+      <kv-message header="Message header">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt inventore libero nemo omnis pariatur sit
+        suscipit unde veritatis? Debitis earum iusto nihil non nostrum omnis provident quod repellendus reprehenderit,
+        voluptatum.
+      </kv-message>
+    </kv-flex-item>
+
     <!--Tab-->
     <kv-flex-item class="pg-2">
       <kv-tab :items="breadcrumbs">
@@ -134,6 +166,14 @@ export default {
         text: 'Active Page',
         to: { name: 'main' },
         isActivePage: true
+      }
+    ],
+    dottedData: [
+      {
+        header: 'List header 1'
+      },
+      {
+        header: 'List header 2'
       }
     ],
     tableTitles: [
