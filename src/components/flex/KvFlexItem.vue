@@ -12,7 +12,7 @@
 export default {
   name: 'KvFlexItem',
   props: {
-    alignSelf: { type: String, default: 'flex-start' },
+    alignSelf: { type: String, default: 'stretch' },
     textAlign: { type: String, default: 'left' },
     width: { type: String, default: 'auto' },
     grow: { type: Number, default: 0 },

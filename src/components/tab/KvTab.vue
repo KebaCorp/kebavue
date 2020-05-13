@@ -10,6 +10,7 @@
       v-if="position === 'left'"
       class="kv-tab-left-container"
       align-self="stretch"
+      :grow="1"
       :style="{ background: this.$kebavue.secondary }"
     >
       <kv-tab-vertical
