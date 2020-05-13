@@ -22,6 +22,7 @@
     <kv-flex-item
       class="kv-tab-content"
       align-self="stretch"
+      :grow="1"
     >
       <slot></slot>
     </kv-flex-item>
